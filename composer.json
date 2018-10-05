@@ -9,6 +9,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.7.*",
         "reliese/laravel": "^0.0.13",
+        "predis/predis": "^1.1",
         "laravel/tinker": "^1.0"
     },
     "require-dev": {
