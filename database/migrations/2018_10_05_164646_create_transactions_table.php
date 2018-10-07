@@ -20,7 +20,7 @@ class CreateTransactionsTable extends Migration
             $table->string('acronym')->nullable();
             $table->longText('description')->nullable();
             $table->string('url')->nullable();
-            $table->string('type'))->nullable();
+            $table->string('type')->nullable();
             $table->longText('languagesupported')->nullable();
             $table->string('periodicity')->nullable();
             $table->longText('economycoverage')->nullable();
