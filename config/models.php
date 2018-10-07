@@ -52,7 +52,7 @@ return [
         |
         */
 
-        'parent' => Reliese\Database\Eloquent\Model::class,
+        'parent' => Illuminate\Database\Eloquent\Model::class,
 
         /*
         |--------------------------------------------------------------------------
@@ -262,7 +262,7 @@ return [
         */
 
         'except' => [
-            'migrations',
+            'migrations', 'password_resets',
         ],
     ],
 
