@@ -30,7 +30,7 @@ class CreateTransactionsTable extends Migration
             $table->longText('updatefrequency')->nullable();
             $table->longText('updateschedule')->nullable();
             $table->string('lastrevisiondate')->nullable();
-            $table->email('contactdetails')->nullable();
+            $table->string('contactdetails')->nullable();
             $table->longText('accessoption')->nullable();
             $table->longText('bulkdownload')->nullable();
             $table->longText('cite')->nullable();
