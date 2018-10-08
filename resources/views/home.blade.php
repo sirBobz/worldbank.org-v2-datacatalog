@@ -17,7 +17,8 @@
                             <th class="text-center"> Acronym</th>
                             <th class="text-center"> Description</th>
                             <th class="text-center"> Type</th>
-                            <th class="text-center"> Created</th>                   
+                            <th class="text-center"> Created</th>   
+                            <th class="text-center"> View</th>                   
                           </tr>
                         </thead>
                         <tbody>
