@@ -18,7 +18,7 @@ class HomeController extends Controller
     }
 
     /**
-     * Show the application dashboard.
+     * Show the application display.
      *
      * @return \Illuminate\Http\Response
      */
@@ -30,7 +30,11 @@ class HomeController extends Controller
     }
 
 
-
+    /**
+     * Show the specific data display.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function viewMore($id)
     {
         $data = Transaction::where('id', '=', $id)->get();
