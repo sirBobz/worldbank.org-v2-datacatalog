@@ -34,7 +34,7 @@ The data is thereafter displayed on a datatable.
 ### Features ###
 
 
-* Authentication (registration, login, logout)
+* Authentication (registration, email verification, login, logout)
 
-* On register/login, view the transactions on the dashboard. The transactions are as a result of GET request from the API call.
+* On register/login, view the data on the dashboard. The data is as a result of GET request from the API call.
 
