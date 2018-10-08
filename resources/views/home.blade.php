@@ -31,8 +31,8 @@
                             <td class="text-center"> {{$detail->acronym}} </td>
                             <td class="text-center"> {{$detail->description}} </td>
                             <td class="text-center"> {{$detail->type}} </td>
-                            <td class="text-center"> {{$detail->created_at}}</td>
-                            <td class="text-center"> <a href="{{ url('/view-more-details') }}" class="btn btn-link">View More</a> </td>                           
+                            <td class="text-center"> {{$detail->created_at}}</td> 
+                            <td class="text-center"> <a href="{{route('view-more-details', $detail->row_id)}}" class="btn btn-info btn-xs" role="button">View More</a></td>                          
                           </tr>
                           @endforeach
                         </tbody>

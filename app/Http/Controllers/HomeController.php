@@ -37,7 +37,7 @@ class HomeController extends Controller
      */
     public function viewMore($id)
     {
-        $data = Transaction::where('id', '=', $id)->get();
+        $data = Transaction::where('row_id', '=', $id)->get();
 
         return view('viewMore', compact('data'));
     }
