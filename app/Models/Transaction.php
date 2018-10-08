@@ -45,12 +45,12 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  */
 class Transaction extends Eloquent
 {
-	protected $casts = [
-		'trx_id' => 'int'
-	];
+	// protected $casts = [
+	// 	'trx_id' => 'int'
+	// ];
 
 	protected $fillable = [
-		'trx_id',
+		//'trx_id',
 		'name',
 		'acronym',
 		'description',
