@@ -28,4 +28,13 @@ class HomeController extends Controller
 
         return view('home', compact('data'));
     }
+
+
+
+    public function viewMore($id)
+    {
+        $data = Transaction::where('id', '=', $id)->get();
+
+        return view('viewMore', compact('data'));
+    }
 }

@@ -27,25 +27,25 @@ class ApiController extends Controller
     public function index()
     {
        try 
-       {
-       	// Get cURL resource
-		$curl = curl_init();
-		// Set some options - we are passing in a useragent too here
-		curl_setopt_array($curl, array(
-		    CURLOPT_RETURNTRANSFER => 1,
-		    CURLOPT_URL => 'http://api.worldbank.org/v2/datacatalog?format=json',
-		    CURLOPT_USERAGENT => 'Api User'
-		));
-		// Send the request & save response to $resp
-		echo $resp = curl_exec($curl);
+        {
+	       	// Get cURL resource
+			$curl = curl_init();
+			// Set some options - we are passing in a useragent too here
+			curl_setopt_array($curl, array(
+			    CURLOPT_RETURNTRANSFER => 1,
+			    CURLOPT_URL => 'http://api.worldbank.org/v2/datacatalog?format=json',
+			    CURLOPT_USERAGENT => 'Api User'
+			));
+			// Send the request & save response to $resp
+			echo $resp = curl_exec($curl);
 
-		// Close request to clear up some resources
-		curl_close($curl);
+			// Close request to clear up some resources
+			curl_close($curl);
 
        	
        } catch (Exception $e) 
        {
-       	 Log::error($e);
+       	   Log::error($e);
        }
     }
 }
