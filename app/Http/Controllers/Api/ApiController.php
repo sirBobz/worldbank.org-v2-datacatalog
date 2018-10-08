@@ -44,15 +44,11 @@ class ApiController extends Controller
           $datacat=$json_obj->datacatalog;
           $i=0;
           foreach($datacat as $key => $value) {
-              echo $value->id . "<br>";
+              $value->id . "<br>";
               $meta=$datacat[$i++]->metatype;
               foreach($meta as $key => $value){
-                  //echo $value->id . " : " . $value->value . "<br>";
                 $arrayName = array($value->id => $value->value);
-                print_r($arrayName);
-
                   Transaction::create($arrayName);
-                  
               }
           }
 
